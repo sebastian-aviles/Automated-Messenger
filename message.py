@@ -4,8 +4,8 @@ import argparse
 import csv
 
 #use file to send texts
-default_phone_number = "3059048596"
-with open('listOfBrothers.txt') as csv_file:
+default_phone_number = "XXXXXXXXXX"
+with open('listOfContacts.txt') as csv_file: #listOfContacts.txt has been excluded from the git Repository
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
@@ -29,6 +29,5 @@ with open('listOfBrothers.txt') as csv_file:
             phone_number, message
         )
         os.system(bash_command)
-        ##########
     print('Processed {} lines'.format(line_count))
 #osascript sendMessage.applescript 9548030254 testing123
