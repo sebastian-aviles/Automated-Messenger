@@ -1,0 +1,12 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore personal files
+listOfContacts.txt
+deletedContacts.txt
+
+# Ignore files related to API keys
+.env
+
+# Ignore SASS config files
+.sass-cache
