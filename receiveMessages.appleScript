@@ -35,21 +35,5 @@
         -- was sent
         set receivedOn to (date "Monday, 1 January 2001 at 00:00:00") + receivedOn * days
         
-        -- Make a reminder
-        tell application "Reminders"
-            if not (exists (list named "Awaiting My Reply")) then ¬
-                make new list with properties {name:"Awaiting My Reply"}
-            
-            tell list named "Awaiting My Reply"
-                -- This creates a reminder with a past due date
-                -- meaning you can sort the reminder list by due
-                -- date to see who has been waiting longest
-                -- for you to reply
-                make new reminder with properties ¬
-                    {name:"Reply To " & sentFrom, body:¬
-                        textContent, due date:¬
-                        receivedOn} ¬
-                        
-            end tell
-        end tell
+        --do something with the array
     end repeat
