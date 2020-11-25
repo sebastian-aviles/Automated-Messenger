@@ -16,10 +16,10 @@ with open('listOfContacts.txt') as csv_file:
         phone_number = row[0]
         # Add phrases here
         phrases = [
-        "STATUS REPORT: This should be working now!! Please enter your grades using the link below. Send STOP to cancel. \njk that won't work."
+        "STATUS REPORT: OOPS I MADE A TYPO IN THE LAST ONE! Please enter your grades using the link below. Send STOP to cancel. \njk that won't work."
         ]
         # Edit message here
-        message = 'Brother {}\n{} Fill out this link{}'.format(row[1], random.choice(phrases),row[2])
+        message = 'Brother {}\n{} Fill out this link {}'.format(row[1], random.choice(phrases),row[2])
         file_path = os.path.realpath(__file__)
         print(file_path)
         file_path = file_path.split(os.path.basename(__file__))[0]
