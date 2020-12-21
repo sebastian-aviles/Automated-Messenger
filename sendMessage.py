@@ -16,7 +16,7 @@ with open('listOfContacts.txt') as csv_file:
         phone_number = row[0]
         # Add phrases here
         phrases = [
-        "STATUS REPORT: OOPS I MADE A TYPO IN THE LAST ONE! Please enter your grades using the link below. Send STOP to cancel. \njk that won't work."
+        "STATUS REPORT: I am collecting the classes brothers have taken and will take next semester to create a database. This will help not only yourself (if you ever need help in a class a brother has already taken) but it will also help future brothers. In order to do this, I need your unofficial transcript. Below I have included a link for you to submit the unofficial transcript (it also includes the steps to download it). I would recommend that you download the transcript on a computer using google chrome. I need it in PDF form (NO screenshots). \nI also sent it to your email, if I had an email on file; if you didn't receive one and would prefer to open the link on you email, reply with your email. Thank you brother. \nSend STOP to cancel. \njk that won't work."
         ]
         # Edit message here
         message = 'Brother {}\n{} Fill out this link {}'.format(row[1], random.choice(phrases),row[2])
