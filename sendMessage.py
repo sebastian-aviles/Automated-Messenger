@@ -16,7 +16,7 @@ with open('listOfContacts.txt') as csv_file:
         phone_number = row[0]
         # Add phrases here
         phrases = [
-        "STATUS REPORT: Upload your transcripts please 😤"
+        "STATUS REPORT: Upload your transcripts please :)"
         ]
         # Edit message here
         message = 'Brother {}\n{} Fill out this link {}'.format(row[1], random.choice(phrases),row[2])
@@ -30,4 +30,3 @@ with open('listOfContacts.txt') as csv_file:
         os.system(bash_command)
         ##########
     print('Processed {} lines'.format(line_count))
-#osascript sendMessage.applescript 9548030254 testing123
