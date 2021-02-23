@@ -19,7 +19,7 @@ with open('listOfContacts.txt') as csv_file:
         ""
         ]
         # Edit message here
-        message = 'Brother {}, Status Report: I still need your transcript. Please send it to me. Below is the link on how to submit it. It gives STEP by STEP instructions, if you have any problems just send me a text. {}'.format(row[1], row[2])
+        message = 'Brother {}, Status Report: Bruh I still need your transcript. Below is the link on how to submit it. It gives STEP by STEP instructions, if you have any problems just send me a text. {}'.format(row[1], row[2])
         file_path = os.path.realpath(__file__)
         print(file_path)
         file_path = file_path.split(os.path.basename(__file__))[0]
