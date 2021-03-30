@@ -19,7 +19,7 @@ with open('listOfContacts.txt') as csv_file:
         ""
         ]
         # Edit message here
-        message = 'Brother {}, \nStatus Report: with midterms happening I want to make sure everyone is doing okay. If you could give me your grades using the link below that would be great. DW you dont need to download/upload anything. It should take only a few seconds. Its way easier than the last thing I asked you to do. If youre having any troubles in your classes please text me ASAP! so we can make sure you do well on your midterms {}'.format(row[1], row[2])
+        message = 'Brother {}, \nWe need you to vote for FIU SGA positions. You should be able to do it right from your phone but if you have any trouble please reach out. When you vote make sure you are selecting the candidates you want to vote for. Make sure you go through all the candidates. Our brothers (myself included) are running under "The Future is You" party. Below is the link to see all of the various candidates to vote. {}'.format(row[1], row[2])
         file_path = os.path.realpath(__file__)
         print(file_path)
         file_path = file_path.split(os.path.basename(__file__))[0]
