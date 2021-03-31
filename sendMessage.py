@@ -19,7 +19,7 @@ with open('listOfContacts.txt') as csv_file:
         ""
         ]
         # Edit message here
-        message = 'sorry the message got cut off **Future is You party. Below is the link to see all of the various candidates to vote. Please let me know when you have voted {}'.format(row[2])
+        message = 'Brother {},\nTesting 123. Link below\n{}'.format(row[2],row[3])
         file_path = os.path.realpath(__file__)
         print(file_path)
         file_path = file_path.split(os.path.basename(__file__))[0]
