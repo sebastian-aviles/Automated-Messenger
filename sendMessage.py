@@ -19,7 +19,7 @@ with open('listOfContacts.txt') as csv_file:
         ""
         ]
         # Edit message here
-        message = 'Brother {},\nTesting 123. Link below\n{}'.format(row[2],row[3])
+        message = 'Brother {},\nTesting 123. Link below\n{}'.format(row[1],row[2])
         file_path = os.path.realpath(__file__)
         print(file_path)
         file_path = file_path.split(os.path.basename(__file__))[0]
